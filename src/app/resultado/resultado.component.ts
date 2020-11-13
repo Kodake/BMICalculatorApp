@@ -14,7 +14,6 @@ export class ResultadoComponent implements OnInit {
 
   constructor(private aRoute: ActivatedRoute) {
     this.bmi = +aRoute.snapshot.paramMap.get('valor');
-    console.log(this.bmi);
   }
 
   ngOnInit(): void {
