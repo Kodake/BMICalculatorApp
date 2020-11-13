@@ -1,0 +1,56 @@
+.card {
+    border-radius: 30px;
+}
+
+.fondo-item {
+    height: 364px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.estilo-numero {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: -30px;
+    color: white;
+}
+
+.resultado {
+    color: #12bd45;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.interpretacion {
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.btn-color {
+    color: #fff;
+    background-color: rgb(204, 60, 16);
+    border-color: rgb(204, 60, 16);
+    border-radius: 25px;
+}
+
+.btn-color:hover {
+    color: #fff;
+    background-color: rgb(175, 56, 19);
+    border-color:  rgb(175, 56, 19);
+    border-radius: 25px;
+}
+
+.btn-color:active {
+    color: #fff;
+    background-color: rgb(255, 127, 88);
+    border-color: rgb(255, 127, 88);
+    border-radius: 25px;
+}

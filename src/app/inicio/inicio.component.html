@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4 p-5">
+        <div class="card bg-primary p-3">
+            <h5 class="text-white">BMI Calculator</h5>
+
+            <div class="row h-100 p-3">
+                <div class="col-6">
+                    <div class="bg-dark rounded fondo-item" [ngClass]="{'sexo-desactivo': sexo !== 'Femenino'}">
+                        <div class="contenedor" style="cursor: pointer;" (click)="masculino()">
+                            <i class="fas fa-mars text-white sexo"></i>
+                            <p class="text-white">Masculino</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="bg-dark rounded fondo-item" [ngClass]="{'sexo-desactivo': sexo !== 'Masculino'}">
+                        <div class="contenedor" style="cursor: pointer;" (click)="femenino()">
+                            <i class="fas fa-venus text-white sexo"></i>
+                            <p class="text-white">Femenino</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row h-100 p-3">
+                <div class="col-12">
+                    <div class="bg-dark rounded fondo-item">
+                        <div class="contenedor p-3">
+                            <p class="text-white">Altura</p>
+                            <div class="estilo-numero">
+                                {{altura}} <span class="cm">cm</span>
+                            </div>
+                            <input type="range" [value]="altura" min="120" max="220" class="custom-range" (input)="cambiarAltura($event)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row h-100 p-3">
+                <div class="col-6">
+                    <div class="bg-dark rounded fondo-item">
+                        <div class="contenedor">
+                            <p class="text-white">Peso</p>
+                            <div class="estilo-numero">{{peso}}</div>
+                            <div>
+                                <i class="fas fa-minus mr-2 p-1 text-white bg-primary rounded-circle suma-resta" (click)="peso = peso - 1"></i>
+                                <i class="fas fa-plus p-1 text-white bg-primary rounded-circle suma-resta" (click)="peso = peso + 1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="bg-dark rounded fondo-item">
+                        <div class="contenedor">
+                            <p class="text-white">Edad</p>
+                            <div class="estilo-numero">{{edad}}</div>
+                            <div>
+                                <i class="fas fa-minus p-1 mr-2 text-white bg-primary rounded-circle suma-resta" (click)="edad = edad - 1"></i>
+                                <i class="fas fa-plus p-1 text-white bg-primary rounded-circle suma-resta" (click)="edad = edad + 1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-12">
+                    <button (click)="calcular()" class="btn btn-block btn-lg btn-color">Calcular</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

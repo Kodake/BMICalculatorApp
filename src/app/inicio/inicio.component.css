@@ -1,0 +1,66 @@
+.card {
+    border-radius: 30px;
+}
+
+.fondo-item {
+    height: 100px;
+}
+
+.sexo {
+    font-size: 40px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.altura-caja {
+    height: 160px;
+}
+
+.estilo-numero {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: -30px;
+    color: white;
+}
+
+.cm {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -10px;
+}
+
+.suma-resta {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-color {
+    color: #fff;
+    background-color: rgb(204, 60, 16);
+    border-color: rgb(204, 60, 16);
+    border-radius: 25px;
+}
+
+.btn-color:hover {
+    color: #fff;
+    background-color: rgb(175, 56, 19);
+    border-color:  rgb(175, 56, 19);
+    border-radius: 25px;
+}
+
+.btn-color:active {
+    color: #fff;
+    background-color: rgb(255, 127, 88);
+    border-color: rgb(255, 127, 88);
+    border-radius: 25px;
+}
+
+.sexo-desactivo {
+    background-color: rgb(175, 56, 19) !important;
+}
